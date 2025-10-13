@@ -1,4 +1,10 @@
-export default function Shop() {
-    return <h1>This is the shop page</h1>
-  }
-  
+
+
+function Shop (){
+    return <div className="shop-empty">
+        <p> currently no products</p>
+        </div>
+    
+}
+
+export default Shop

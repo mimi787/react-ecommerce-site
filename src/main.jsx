@@ -1,13 +1,13 @@
-import React from 'react'//bring in react core libraries
-import ReactDOM from 'react-dom/client'
-import { BrowserRouter } from 'react-router-dom' // wrap my app in router context for navigation
-import App from './App'//app.jsx
+import { StrictMode} from 'react';
+import { createRoot } from 'react-dom/client';
+import { BrowserRouter } from 'react-router-dom'; // wrap my app in router context for navigation
+import "../css/index.css"
+import App from './App.jsx'
 
-import'./index.css'
-ReactDOM.createRoot(document.getElementById('root')).render(//mount react app into dom
-    <React.StrictMode>
+createRoot(document.getElementById('root')).render(//mount react app into dom
+  <StrictMode>
     <BrowserRouter>
-    <App/>
+      <App/>
     </BrowserRouter>
-  </React.StrictMode>
+  </StrictMode>
 )

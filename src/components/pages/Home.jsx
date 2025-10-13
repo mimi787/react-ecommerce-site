@@ -1,4 +1,10 @@
-export default function Home() {
-    return <h1>Welcome to the Store</h1>
-  }
-  
+
+
+function Home(){
+    return <div className="home-empty">
+        <p> This homepage is empty for now</p>
+    </div>
+
+}
+
+export default Home
