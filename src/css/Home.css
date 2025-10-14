@@ -1,0 +1,37 @@
+.home-container{
+min-height: 100vh;          /* full screen height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;    /* vertically center */
+  align-items: center;        /* horizontally center */
+  background-color: #FFF7FE;  /* pinkish background */
+  text-align: center;
+  padding: 1rem;
+}
+
+.home-image{
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    margin-bottom: 1.5rem;
+}
+
+.home-shop-btn{
+    display: inline-block;
+  background-color: #38a169; /* green */
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;      /* fully rounded */
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+
+.home-shop-btn:hover{
+    background-color: #2f855a;
+}
