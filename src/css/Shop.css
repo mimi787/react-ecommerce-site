@@ -1,0 +1,30 @@
+.shop-page {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .shop-title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  .shop-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    justify-items: nowrap;
+  }
+  
+  .shop-grid img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .shop-grid img:hover {
+    transform: scale(1.05);
+  }
+  
