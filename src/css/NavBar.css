@@ -25,10 +25,11 @@
   height: 40px;
   border-radius: 6px;
   object-fit: cover;
+  color:#000000
 }
 
 .brand-name {
-  font-family: 'Newsreader', serif;
+  font-family: 'Snell Roundhand',cursive ;
   font-size: 1.6rem;
   color: #000000;
   text-decoration: none;
@@ -44,7 +45,7 @@
 
 /* Shop button */
 .nav-button {
-  background-color: #426B1F;
+  background-color: #000000;
   color: white;
   padding: 0.5rem 1rem;
   border-radius: 6px;

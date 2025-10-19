@@ -10,7 +10,7 @@ min-height: 100vh;          /* full screen height */
 }
 
 .home-image{
-    width: 300px;
+    width: 450px;
     justify-content: center;
     align-items: center;
     max-width: 90%;
@@ -20,18 +20,19 @@ min-height: 100vh;          /* full screen height */
 }
 
 .home-shop-btn{
-    display: inline-block;
-  background-color: #38a169; /* green */
+  display: inline-block;
+  background-color: #000000; /* green */
   color: white;
   padding: 0.75rem 1.5rem;
-  border-radius: 9999px;      /* fully rounded */
+  border-radius: 15px;      /* fully rounded */
   font-size: 1rem;
-  font-weight: bold;
-  text-decoration: none;
+  font-weight: none;
+  font-family: 'Inter', sans-serif;
   transition: background-color 0.3s;
 }
 
 
 .home-shop-btn:hover{
-    background-color: #2f855a;
+    background-color: #a981a6;
+    color: white;
 }

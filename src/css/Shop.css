@@ -6,6 +6,8 @@
   .shop-title {
     font-size: 2rem;
     margin-bottom: 30px;
+    color: black;
+    font-family: 'Snell Roundhand',cursive ;
   }
   
   .shop-grid {
