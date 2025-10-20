@@ -1,86 +1,131 @@
-.checkout-page {
-    background-color: #FFF7FE;
-    min-height: 100vh;
-    padding: 2rem;
-    font-family: 'Inter', sans-serif;
-  }
-  
-  .checkout-page h2 {
-    text-align: center;
-    color: #426B1F;
-    margin-bottom: 2rem;
-  }
-  
-  .checkout-items {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
-  }
-  
-  .checkout-card {
-    background-color: white;
-    border-radius: 16px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    display: flex;
-    width: 500px;
-    overflow: hidden;
-  }
-  
-  .checkout-img {
-    width: 180px;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 16px 0 0 16px;
-  }
-  
-  .checkout-details {
-    padding: 1rem;
-    flex: 1;
-  }
-  
-  .checkout-buttons {
-    display: flex;
-    gap: 0.5rem;
-    margin-top: 1rem;
-  }
-  
-  .checkout-buttons button {
-    background-color: #C6F6D5;
-    color: #2F855A;
-    border: none;
-    padding: 0.4rem 0.8rem;
-    border-radius: 8px;
-    cursor: pointer;
-  }
-  
-  .checkout-buttons button:hover {
-    background-color: #A3E635;
-  }
-  
-  .checkout-summary {
-    margin-top: 2rem;
-    text-align: center;
-  }
-  
-  .btn-checkout {
-    background-color: #2F855A;
-    color: white;
-    border: none;
-    padding: 0.8rem 1.5rem;
-    border-radius: 8px;
-    cursor: pointer;
-    font-weight: 600;
-    transition: background-color 0.3s;
-  }
-  
-  .btn-checkout:hover {
-    background-color: #276749;
-  }
-  
-  .checkout-empty {
-    text-align: center;
-    padding: 3rem;
-    color:black
-  }
-  
+.cart-page {
+  text-align: center;
+  padding: 2rem;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+
+.cart-page h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.cart-item {
+  display: flex;
+  font-family: 'Amiri', serif;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  border-radius: 12px;
+  padding: 1rem 2rem;
+  margin: 1rem auto;
+  max-width: 700px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.cart-item:hover {
+  transform: translateY(-2px);
+}
+
+.cart-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.cart-item h3 {
+  flex: 1;
+  text-align: left;
+  margin-left: 20px;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.cart-item p {
+  font-weight: bold;
+  margin: 0 10px;
+  color: #666;
+}
+
+.cart-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #666;
+}
+
+.cart-controls button {
+  background: #e0e0e0;
+  border: none;
+  border-radius: 6px;
+  padding: 0.4rem 0.8rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.cart-controls button:hover {
+  background: #d6d6d6;
+}
+
+.cart-controls span {
+  font-size: 1rem;
+  min-width: 24px;
+  text-align: center;
+  font-family: 'Amiri', serif;
+}
+
+.remove-btn {
+  background: #ffcccc;
+  color: #a00;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.remove-btn:hover {
+  background: #ffb3b3;
+}
+
+.total-section {
+  margin-top: 2rem;
+  text-align: center;
+  font-family: 'Amiri', serif;
+}
+
+.total-section h3 {
+  font-size: 1.5rem;
+  color: #333;
+  font-family: 'Amiri', serif;
+}
+
+.checkout-btn {
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.8rem 1.6rem;
+  margin-top: 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.checkout-btn:hover {
+  background: #333;
+}
+
+.cart-total{
+  color:black;
+  font-family: 'Amiri', serif;
+}
+.empty{
+  color:hotpink;
+  font-family: 'Amiri', serif;
+}

@@ -1,10 +1,6 @@
 import"../../css/ProductPage.css"
-// import skirt1 from "../../assets/beigemaxi.jpeg";
-// import skirt2 from "../../assets/brownmaxi.jpeg";
-// import skirt3 from "../../assets/greymaxi.jpeg";
-// import skirt4 from "../../assets/whitemaxi.jpeg";
 import { useParams } from "react-router-dom";//for url
-import { useCartContext} from "../../contexts/ProductContext.jsx";
+import { useCartContext} from "../../contexts/CartContext.jsx";
 import {useState, useEffect} from "react";//react hook for state
 
 

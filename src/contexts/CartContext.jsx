@@ -48,6 +48,28 @@ export const CartProvider = ({children}) =>{
         )
     }
 
+    const checkout = async () => {
+        try {
+          const response = await fetch("http://localhost:5001/purchase", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ items: cart }),
+          });
+      
+          if (!response.ok) {
+            throw new Error("Purchase failed");
+          }
+      
+          window.alert("Items have been purchased!");
+          setCart([]); // clear cart after purchase
+          localStorage.removeItem("cart"); // clear from local storage
+        } catch (error) {
+          console.error("Checkout error:", error);
+          window.alert("Something went wrong during checkout.");
+        }
+      };
+      
+
     const totalPrice = cart.reduce(
         (total, item) => total + item.price * item.quantity,
         0
@@ -57,7 +79,8 @@ export const CartProvider = ({children}) =>{
         addToCart,
         removeFromCart,
         decreaseQuantity,
-        totalPrice
+        totalPrice,
+        checkout
     }
     return (
         <CartContext.Provider value={value}>
