@@ -29,4 +29,16 @@
   .shop-grid img:hover {
     transform: scale(1.05);
   }
-  
+
+  .item-name{
+    display: flex;
+    color: black;
+    font-size: 1rem;
+    font-family: 'Snell Roundhand',cursive ;
+  }
+  .item-price{
+    display: flex;
+    color: black;
+    font-size: 1rem;
+    font-family: 'Amiri', serif;;
+  }

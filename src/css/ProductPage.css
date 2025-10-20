@@ -73,4 +73,8 @@
   .btn-buy:hover {
     background-color: #276749;
   }
-  
+
+  .product-price{
+    color: black;
+    font-family: 'Amiri', serif;
+  }
